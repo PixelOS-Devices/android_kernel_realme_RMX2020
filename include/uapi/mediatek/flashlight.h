@@ -15,8 +15,8 @@
 #define OPLUS_FEATURE_CAMERA_COMMON
 #endif
 
-#ifndef _FLASHLIGHT_H
-#define _FLASHLIGHT_H
+#ifndef _UAPI_FLASHLIGHT_H
+#define _UAPI_FLASHLIGHT_H
 
 #include <linux/types.h>
 #include <linux/ioctl.h>
@@ -130,5 +130,5 @@ typedef enum {
 #define FLASH_IOC_GET_HW_FAULT             _IOR(FLASHLIGHT_MAGIC, 250, int)
 #define FLASH_IOC_GET_HW_FAULT2            _IOR(FLASHLIGHT_MAGIC, 251, int)
 
-#endif /* _FLASHLIGHT_H */
+#endif /* _UAPI_FLASHLIGHT_H */
 
