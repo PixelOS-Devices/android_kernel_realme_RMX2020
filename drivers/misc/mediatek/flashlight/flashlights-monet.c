@@ -81,6 +81,7 @@
 #define MONET_LEVEL_TORCH 7
 
 #define MONET_HW_TIMEOUT 400 /* ms */
+static int monet_current_level = 0;
 
 /* define mutex and work queue */
 static DEFINE_MUTEX(monet_mutex);
@@ -558,6 +559,7 @@ static int monet_ioctl(unsigned int cmd, unsigned long arg)
 	case FLASH_IOC_SET_DUTY:
 		pr_info("FLASH_IOC_SET_DUTY(%d): %d\n",
 				channel, (int)fl_arg->arg);
+		monet_current_level = monet_verify_level(fl_arg->arg);
 		monet_set_level(channel, fl_arg->arg);
 		break;
 
@@ -586,6 +588,12 @@ static int monet_ioctl(unsigned int cmd, unsigned long arg)
 		pr_info("FLASH_IOC_GET_MAX_TORCH_DUTY(%d)\n", channel);
 		fl_arg->arg = MONET_LEVEL_TORCH - 1;
 		break;
+
+	case FLASH_IOC_GET_CURRENT_TORCH_DUTY:
+        pr_debug("FLASH_IOC_GET_CURRENT_TORCH_DUTY(%d): %d\n",
+                channel, monet_current_level);
+        fl_arg->arg = monet_current_level;
+        break;
 
 	case FLASH_IOC_GET_DUTY_CURRENT:
 		fl_arg->arg = monet_verify_level(fl_arg->arg);
