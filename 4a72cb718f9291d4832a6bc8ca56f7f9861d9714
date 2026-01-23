@@ -1,0 +1,21 @@
+{
+  "comments": [
+    {
+      "unresolved": true,
+      "key": {
+        "uuid": "ac69728c_d554654b",
+        "filename": "/PATCHSET_LEVEL",
+        "patchSetId": 2
+      },
+      "lineNbr": 0,
+      "author": {
+        "id": 1000003
+      },
+      "writtenOn": "2026-01-23T04:19:13Z",
+      "side": 1,
+      "message": "Why did you remove his sign-off?",
+      "revId": "4a72cb718f9291d4832a6bc8ca56f7f9861d9714",
+      "serverId": "58543e18-2196-4633-8043-7787712585ad"
+    }
+  ]
+}
