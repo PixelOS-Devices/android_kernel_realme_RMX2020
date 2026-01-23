@@ -1,0 +1,21 @@
+{
+  "comments": [
+    {
+      "unresolved": true,
+      "key": {
+        "uuid": "074966d9_b9008483",
+        "filename": "/PATCHSET_LEVEL",
+        "patchSetId": 3
+      },
+      "lineNbr": 0,
+      "author": {
+        "id": 1000003
+      },
+      "writtenOn": "2026-01-23T04:38:03Z",
+      "side": 1,
+      "message": "You messed up commit description",
+      "revId": "1efe5cd516e14bfa521198c7d72e9d1d1f37735c",
+      "serverId": "58543e18-2196-4633-8043-7787712585ad"
+    }
+  ]
+}
