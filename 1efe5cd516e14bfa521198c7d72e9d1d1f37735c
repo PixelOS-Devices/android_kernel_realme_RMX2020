@@ -26,6 +26,30 @@
     {
       "unresolved": true,
       "key": {
+        "uuid": "278ec065_2107cb44",
+        "filename": "/COMMIT_MSG",
+        "patchSetId": 3
+      },
+      "lineNbr": 11,
+      "author": {
+        "id": 1000081
+      },
+      "writtenOn": "2026-01-23T04:44:42Z",
+      "side": 1,
+      "message": "I didn\u0027t add it",
+      "parentUuid": "6ac06b67_7ebc2e9f",
+      "range": {
+        "startLine": 11,
+        "startChar": 16,
+        "endLine": 11,
+        "endChar": 42
+      },
+      "revId": "1efe5cd516e14bfa521198c7d72e9d1d1f37735c",
+      "serverId": "58543e18-2196-4633-8043-7787712585ad"
+    },
+    {
+      "unresolved": true,
+      "key": {
         "uuid": "074966d9_b9008483",
         "filename": "/PATCHSET_LEVEL",
         "patchSetId": 3
